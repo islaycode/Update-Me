@@ -1,0 +1,47 @@
+.parent{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: black;
+    width: 100%;
+    height: 40px;
+    
+}
+.child{
+    
+    margin-top: 3px;
+    font-size: 1.5rem;
+    color: whitesmoke;
+  
+    
+}
+.current{
+    color:navajowhite;
+   
+}
+a.current{
+    text-decoration: underline;
+}
+
+@media (max-width: 768px){
+    .child{
+        font-size: 15px;
+        font-weight: bold;
+        border-right: 1px solid white;
+        
+    }
+    .parent{
+        height: 30px;
+    }
+}
+@media (max-width: 320px){
+    .child{
+        font-size: 12px;
+        font-weight: bold;
+        border-right: 1px solid white;
+        margin-left: 2px;
+    }
+    .parent{
+        height: 30px;
+    }
+}
