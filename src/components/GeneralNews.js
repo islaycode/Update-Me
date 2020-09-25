@@ -17,10 +17,10 @@ export class GeneralNews extends Component {
                         <div className="ui divider"></div>
                         <div className="ui red ribbon label"><i className="ui newspaper icon"/>Breaking News:</div>
                         <br/>
-                        <span><h4><a className="ui blue mini empty circular label"/> {post.description}</h4></span>
+                        <span><h4><div className="ui blue mini empty circular label"/> {post.description}</h4></span>
                         <div className="ui divideder"></div>
                         <br/>
-                        <a href={post.url} target="_blank" className="ui fluid inverted violet button">Read Full Story</a>
+                        <button onClick={()=> window.open(post.url)}   className="ui fluid inverted violet button">Read Full Story</button>
                 </div>
             )
         })
